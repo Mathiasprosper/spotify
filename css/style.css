@@ -1,0 +1,506 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #121212;
+}
+.header{
+    display: flex;
+    height: 100%;
+    overflow: auto;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    position: fixed;
+    background-color: black;
+}
+.header-1{
+    width: 400px;
+    height: 130px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(31, 30, 30);
+}
+.header-1 img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+.home-icon{
+    display: flex;
+    font-weight: 700;
+    font-size: 30px;
+}
+.search-icon{
+    display: flex;
+    color: #636363;
+    font-weight: 700;
+    font-size: 30px;
+}
+.search-icon:hover{
+    color: #ffffff;
+}
+.head{
+    overflow: auto;
+}
+.header-2{
+    width: 400px;
+    height: 700px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(31, 30, 30);
+}
+.header-2 img{
+    width: 55px;
+    border-radius: 50px;
+    display: flex;
+}
+.recents{
+   display: flex;
+   gap: 10px;
+}
+.recents:hover{
+    background-color: #363232;
+}
+.asake{
+    display: flex;
+    gap: 10px;
+}
+.asake:hover{
+    background-color: #363232;
+}
+.juice{
+    display: flex;
+    gap: 10px;
+}
+.juice:hover{
+    background-color: #363232;
+}
+.oyor{
+    display: flex;
+    gap: 10px;
+}
+.oyor:hover{
+    background-color: #363232;
+}
+.theo{
+    display: flex;
+    gap: 10px;
+}
+.theo:hover{
+    background-color: #363232;
+}
+.guc{
+    display: flex;
+    gap: 10px;
+}
+.guc:hover{
+    background-color: #363232;
+}
+.button{
+    gap: 10px;
+}
+.button-1{
+    color: white;
+    background-color: rgb(56, 54, 54);
+    border: transparent;
+    border-radius: 10px; 
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;  
+}
+.button-1:hover{
+    color: white;
+    background-color: rgb(57, 58, 59);
+}
+.button-2{
+    color: white;
+    background-color: rgb(56, 54, 54);
+    border: transparent;
+    border-radius: 10px;  
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;  
+    
+}
+.button-2:hover{
+    color: white;
+    background-color: rgb(57, 58, 59);    
+}
+.home{
+    display: flex;
+    justify-content: end;
+    margin-bottom:50px;
+    margin-left: 5px;
+}
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 14px 30px;
+}
+.navbar{
+    color: black;
+    height: 34px;
+    border-radius: 10px;
+    font-size: 18px;
+    justify-content: space-between;
+    margin-right: 5px;
+    margin-top: 0px;
+    margin-left: 790px;
+}
+.btn-1{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;  
+}
+.btn-1:hover{
+    background-color: #fff;
+    padding-left: 7px;
+    padding-top: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;  
+}
+.btn-2{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;  
+}
+.btn-2:hover{
+    background-color: black;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;  
+}
+.icons{
+    width: 1130px;
+    height: 2000px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(31, 30, 30);
+}
+.icons img{
+    border-radius: 500px;
+}
+.suggestions{
+    padding: 20px 40px;
+}
+.suggestions{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.suggestions .list{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.suggestions .list .items{
+    min-width: 140px;
+    width: 160px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+.suggestions .list .items:hover{
+    background-color: #252525;
+}
+.suggestions .list .items img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.suggestions .list .items .play{
+    position: relative;
+}
+.suggestions .list .items .spotify-play img{
+    position:absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-image: none;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all easy 0.4s;
+}
+.suggestions .list .items:hover .play .spotify-play{
+    opacity: 1;
+    transform: translateY(-20px);
+    background-image: url(.../image/play.png);
+}
+.suggestions .list .items h2{
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.suggestions .list .items p{
+    color: #989898;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+}
+.suggestions hr{
+    margin: 70px 0px 0px;
+    border-color: #636363;
+}
+.spotify-list{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.spotify-list .list{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+.spotify-list .list .items{
+    min-width: 140px;
+    width: 160px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+.spotify-list .list .items:hover{
+    background-color: #252525;
+}
+.spotify-list .list .items img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.suggestions .list .items .play{
+    position: relative;
+}
+.suggestions .list .items .spotify-play{
+    position:absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all easy 0.4s;
+}
+.suggestions .list .items:hover .play .spotify-play{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.suggestions .list .items h2{
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.suggestions .list .items p{
+    color: #989898;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+}
+.suggestions hr{
+    margin: 70px 0px 0px;
+    border-color: #636363;
+}
+.suggestions{
+    padding: 20px 40px;
+}
+.suggestions{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.suggestions .list{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.suggestions .list .items{
+    min-width: 140px;
+    width: 160px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+.suggestions .list .items:hover{
+    background-color: #252525;
+}
+.suggestions .list .items img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.suggestions .list .items .play{
+    position: relative;
+}
+.suggestions .list .items .spotify-play{
+    position:absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: #1db954;
+    background-image: url(../image/play.png);
+    border-radius: 100%;
+    opacity: 0;
+    transition: all easy 0.4s;
+}
+.suggestions .list .items:hover .play .spotify-play{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.suggestions .list .items h2{
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.suggestions .list .items p{
+    color: #989898;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+}
+.suggestions hr{
+    margin: 70px 0px 0px;
+    border-color: #636363;
+}
+.footer-list-items{
+    display: flex;
+    font-size: large;
+}
+.footer-list-items ul{
+    margin: 15px;
+}
+.footer-list-items ul{
+    list-style: none;
+    margin: 20px 50px;
+    cursor: pointer;
+}
+.About{
+    font-weight: 600;
+    color: white;
+}
+.soceity{
+    font-weight: 600;
+    color: white;
+}
+.sites{
+    font-weight: 600;
+    color: white;
+}
+a{
+    text-decoration: none;
+    list-style-type: none;
+    color: #989898;
+}
+.ig-icon{
+    width: 50px;
+    margin-right: 15px;
+}
+.twit-icon{
+    width: 50px;
+    margin-right: 15px;   
+}
+.fb-icon{
+    width: 50px;
+}
+hr{
+    width: 110000px;
+}
+.info{
+    display: flex;
+    list-style: none;
+    color: #989898;
+    font-size: large;
+}
+.info:hover{
+    color: #fff;
+}
+.privacy{
+    display: flex;
+    font-size: large;
+}
+.privacy ul{
+    list-style: none;
+    color: #989898;
+}
+.privacy ul:hover{
+    color: #fff;
+}
+.policy{
+    display: flex;
+    list-style: none;
+    font-size: large;
+}
+.policy ul{
+    list-style: none;
+    color: #989898;
+}
+.policy ul:hover{
+    color: #fff;
+}
+.cookies{
+    display: flex;
+    font-size: large;
+}
+.cookies ul{
+    list-style: none;
+    color: #989898;
+}
+.cookies ul:hover{
+    color: #fff;
+}
+.ads{
+    display: flex;
+    font-size: large;
+}
+.ads ul{
+    list-style: none;
+    color: #989898;
+}
+.ads ul:hover{
+    color: #fff;
+}
+.access{
+    display: flex;
+    font-size: large;
+}
+.access ul{
+    list-style: none;
+    color: #989898;
+}
+.access ul:hover{
+    color: #fff;
+}
+.AB{
+    color: #989898;
+    font-size: large;
+}
+.AB:hover{
+    color: #fff;
+}
